@@ -1,4 +1,67 @@
-:root {
-  background-color: #564d4d;
+body, html {
+  background-color: #fff;
+  font-family: 'Helvetica Neue',Arial, Helvetica, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(gray), to(transparent));
+  background-image: linear-gradient(gray, transparent);
+}
+
+.logo a {
+  color: #e50914;
+  text-decoration: none;
+}
+
+.navLinks {
+  padding-left: 30px;
+  list-style: none;
+}
+
+.navLinks li {
+  display: inline-block;
+  padding: 0px 10px;
+}
+
+.navLinks li a {
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.navLinks a {
+  color: #eee1dd;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0px;
+}
+
+.navLinks li a:hover {
+  cursor: pointer;
+  color: #564d4d;
+  -webkit-transition: .2s ease-in;
+  transition: .2s ease-in;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=styles.css.map */
