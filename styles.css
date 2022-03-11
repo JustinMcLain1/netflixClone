@@ -12,9 +12,11 @@ body, html {
 }
 
 header {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: fixed;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -25,7 +27,8 @@ header {
   padding-top: 10px;
   padding-bottom: 30px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(gray), to(transparent));
-  background-image: linear-gradient(gray, transparent);
+  background-image: linear-gradient(to bottom, gray, transparent);
+  position: fixed;
 }
 
 .logo a {
@@ -63,5 +66,81 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+#landing {
+  height: 60vh;
+  background-image: url(/images/210228.webp);
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  text-align: left;
+  background-repeat: no-repeat;
+}
+
+.landingBtns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  margin-top: 40px;
+  padding-left: 30px;
+  padding-top: 400px;
+  text-decoration: none;
+}
+
+.btn {
+  background: white;
+  border: none;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  font-size: 1em;
+  border-radius: 5px;
+}
+
+.moreBtn {
+  background: grey;
+  border: none;
+  padding-left: 1.2em;
+  padding-right: 1.2em;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  font-size: 1em;
+  border-radius: 5px;
+  opacity: 75%;
+}
+
+#playBtn {
+  border-radius: 2px;
+  margin-right: 25px;
+  font-size: 1.3em;
+  text-decoration: none;
+  text-align: left;
+  border: white;
+  color: black;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-style: bold;
+}
+
+#moreInfo {
+  border-radius: 2px;
+  margin-right: 25px;
+  font-size: 1.3em;
+  color: aliceblue;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: bold;
 }
 /*# sourceMappingURL=styles.css.map */
