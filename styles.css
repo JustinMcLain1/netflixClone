@@ -1,6 +1,7 @@
 body, html {
   background-color: #141414;
   font-family: 'Helvetica Neue',Arial, Helvetica, sans-serif;
+  
 }
 
 * {
@@ -70,7 +71,6 @@ header {
 
 #landing {
   height: 60vh;
-  background-image: url(/images/210228.webp);
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -79,6 +79,9 @@ header {
       -ms-flex-pack: left;
           justify-content: left;
   text-align: left;
+  background-image: linear-gradient(
+    to bottom, transparent, #141414
+  ), url("/images/210228.webp");
   background-repeat: no-repeat;
 }
 
@@ -142,5 +145,36 @@ header {
   text-decoration: none;
   font-family: sans-serif;
   font-weight: bold;
+}
+
+.container {
+  padding-top: 1.5em;
+  padding-left: 1.5em;
+  display: flex;
+  margin-top: 50px;
+}
+
+.item {
+  position: relative;
+  display: block;
+  flex: 1 1 0px;
+  transition: transform 500ms;
+}
+
+.container .item:focus,
+.container .item:hover {
+  transform: scale(1.5);
+  z-index: 1;
+}
+
+body {
+  overflow: hidden;
+}
+
+.item img {
+  display: block;
+  padding-right: 5px;
+  max-width: 100%;
+  border-radius: 10px;
 }
 /*# sourceMappingURL=styles.css.map */

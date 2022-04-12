@@ -1,6 +1,10 @@
 body , html {
     background-color: rgb(20,20,20);
     font-family: 'Helvetica Neue',Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(
+      to bottom, transparent, #837960
+    ), url("/images/210228.webp");
+    background-repeat: no-repeat;
 }
 
 * {
@@ -59,15 +63,17 @@ header {
 
 //landing main
 
-#landing {
-    height: 60vh;
-    background-image: url(/images/210228.webp);
-    background-size:cover;
-    display: flex;
-    justify-content: left;
-    text-align: left;
-    background-repeat: no-repeat;
-}
+// #landing {
+//     height: 60vh;
+//     //background-image: url(/images/210228.webp);
+//     background-size:cover;
+//     display: flex;
+//     justify-content: left;
+//     text-align: left;
+//     background-repeat: no-repeat;
+//     padding-bottom: 40px;      
+// }
+
 // landing buttons
 
 .landingBtns {
@@ -127,5 +133,45 @@ header {
     font-weight: bold;
 }
 
+//SECTION Shows
+
+.container {
+    display: flex;
+    margin-top: 50px;
+  }
+  
+  .item {
+    position: relative;
+    display: block;
+    flex: 1 1 0px;
+    transition: transform 500ms;
+  }
+  
+  .container:focus-within .item,
+  .container:hover .item {
+    transform: translateX(-25%);
+  }
+  
+  .item:focus ~ .item,
+  .item:hover ~ .item {
+    transform: translateX(25%);
+  }
+  
+  .container .item:focus,
+  .container .item:hover {
+    transform: scale(1.5);
+    z-index: 1;
+  }
+  
+  body {
+    overflow: hidden;
+  }
+  
+  .item img {
+    display: block;
+    max-width: 100%;
+  }
+
+  
 
 
